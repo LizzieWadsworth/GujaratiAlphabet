@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+}
+.start-screen,
+.score-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.start-screen h2 {
+  font-size: 40px;
+  padding: 25px;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+#start-button,
+#restart, 
+#home,
+.level {
+  background: #037705;
+  color: #fff;
+  padding: 5px 5px;
+  border-radius: 8px;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#restart, 
+#home {
+  margin-top: 0.9em;
+}
+
+#display-container {
+  padding: 3.1em 1.8em;
+  width: 80%;
+  margin: 0 auto;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 0.6em;
+}
+.header {
+  margin-bottom: 1.8em;
+  display: flex;
+  padding-bottom: 0.6em;
+  border-bottom: 0.1em solid #c0bfd2;
+  text-align: right;
+}
+
+.question {
+  margin-bottom: 1.25em;
+  font-weight: 600;
+  text-align: center;
+  font-size: 2em;
+  background: #53adf0;
+  color: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+  line-height: 1.6;
+}
+.number-of-question {
+  font-size: 2em;
+  text-align: right;
+}
+
+.option-div {
+  font-size: 2em;
+  padding: 1em;
+  margin: 0.3em 0;
+  text-align: center;
+  outline: none;
+  background: transparent;
+  border: 1px solid #c0bfd2;
+  border-radius: 0.3em;
+  background: #d0ecff;
+  color: #000000;
+}
+.option-div:disabled {
+  color: #000000;
+  cursor: not-allowed;
+}
+#next-button {
+  background-color: #0a69ed;
+  color: #ffffff;
+  float: right;
+  padding: 8px 32px;
+  border-radius: 8px;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.hide {
+  display: none;
+}
+.incorrect {
+  background-color: #ffdde0;
+  color: #d32f2f;
+  border-color: #d32f2f;
+}
+.correct {
+  background-color: #e7f6d5;
+  color: #689f38;
+  border-color: #689f38;
+}
+#user-score {
+  font-size: 1.5em;
+  color: #ffffff;
+  text-align: center;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.levels {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.endscreen {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}

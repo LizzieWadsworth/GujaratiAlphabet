@@ -1,0 +1,58 @@
+<!-- Made By Jayzzie Gujarati -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati letters Quiz</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="start-screen">
+      <h2>Gujarati letter quizzes</h2>
+      <h2>Vowels</h2>
+      <button class ="level" id="start-button">All Vowels</button>
+      <h2>Consonants</h2>
+      <div class="levels">
+        <button class ="level" id="level-two">Level 1</button>
+        <button class ="level" id="level-three">Level 2</button>
+        <button class ="level" id="level-four">Level 3</button>
+        <button class ="level" id="level-five">Level 4</button>
+        <button class ="level" id="level-six">Level 5</button>
+        <button class ="level" id="level-seven">Level 6</button>
+      </div>
+      <h2>All letters</h2>
+      <button class ="level" id="level-eight">All letters</button>
+    </div>
+    <div id="display-container">
+      <div class="header">
+        <div class="number-of-count">
+          <span class="number-of-question">1 of 10 questions</span>
+        </div>
+      </div>
+      <div id="container">
+        <!-- questions and options will be displayed here -->
+      </div>
+      <button id="next-button">Next</button>
+    </div>
+    <div class="score-container hide">
+      <div id="user-score">Demo Score</div>
+      <div class="endscreen">
+        <button id="restart">Retry level</button>
+        <button id="home">Return home</button>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="questions_level1.js"></script>
+    <script src="questions_level2.js"></script>
+    <script src="questions_level3.js"></script>
+    <script src="questions_level4.js"></script>
+    <script src="questions_level5.js"></script>
+    <script src="questions_level6.js"></script>
+    <script src="questions_level7.js"></script>
+    <script src="questions_level8.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
