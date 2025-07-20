@@ -37,7 +37,7 @@ button {
 .level {
   background: #fff;
   color: #1CB0F6;
-  height: 44px;
+  height: 6vh;
   padding: 10px 10px;
   border-radius: 15px;
   border: none;
@@ -50,7 +50,7 @@ button {
 .letterbutton {
   background: #fff;
   color: #1abf0b;
-  height: 44px;
+  height: 6vh;
   padding: 10px 10px;
   border-radius: 15px;
   border: none;
