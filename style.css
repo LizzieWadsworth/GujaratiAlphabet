@@ -21,8 +21,8 @@ body {
 }
 
 .start-screen h2 {
-  font-size: 3vw;
-  padding: 2vw;
+  font-size: 40px;
+  padding: 25px;
 }
 
 button {
@@ -37,11 +37,11 @@ button {
 .level {
   background: #fff;
   color: #1CB0F6;
-  height: 6vh;
+  height: 44px;
   padding: 10px 10px;
   border-radius: 15px;
   border: none;
-  font-size: 1.4vw;
+  font-size: 20px;
   cursor: pointer;
   font-weight: 800;
   box-shadow: 0 4px 0 #BBE7FC;
@@ -50,11 +50,11 @@ button {
 .letterbutton {
   background: #fff;
   color: #1abf0b;
-  height: 6vh;
+  height: 44px;
   padding: 10px 10px;
   border-radius: 15px;
   border: none;
-  font-size: 1.4vw;
+  font-size: 20px;
   cursor: pointer;
   font-weight: 800;
   box-shadow: 0 4px 0 #c6fcbb;
