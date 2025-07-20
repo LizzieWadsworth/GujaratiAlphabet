@@ -7,7 +7,12 @@ let scoreContainer = document.querySelector(".score-container");
 let restart = document.getElementById("restart");
 let userScore = document.getElementById("user-score");
 let startScreen = document.querySelector(".start-screen");
-let startButton = document.getElementById("start-button");
+let level2Button = document.getElementById("level-two");
+let level3Button = document.getElementById("level-three");
+let level4Button = document.getElementById("level-four");
+let level5Button = document.getElementById("level-five");
+let level6Button = document.getElementById("level-six");
+let level7Button = document.getElementById("level-seven");
 let level9Button = document.getElementById("level-nine");
 let level10Button = document.getElementById("level-ten");
 let homeButton = document.getElementById("home");
@@ -16,7 +21,7 @@ let scoreCount = 0;
 let count = 11;
 let beatcorrect = new Audio('duolingo-correct.mp3');
 let beatwrong = new Audio('duolingo-wrong.mp3');
-let currentlevel = quizArray_level1;
+let currentlevel = quizArray_level10;
 
 //Return to start screen on load
 window.onload = () => {
@@ -167,11 +172,51 @@ function initial(chosen_level) {
   quizDisplay(questionCount);
 }
 
-//when user click on Level 1 button
-startButton.addEventListener("click", () => {
+//when user click on Level 2 button
+level2Button.addEventListener("click", () => {
   startScreen.classList.add("hide");
   displayContainer.classList.remove("hide");
-  currentlevel = quizArray_level1;
+  currentlevel = quizArray_level2;
+  initial(currentlevel);
+});
+
+//when user click on Level 3 button
+level3Button.addEventListener("click", () => {
+  startScreen.classList.add("hide");
+  displayContainer.classList.remove("hide");
+  currentlevel = quizArray_level3;
+  initial(currentlevel);
+});
+
+//when user click on Level 4 button
+level4Button.addEventListener("click", () => {
+  startScreen.classList.add("hide");
+  displayContainer.classList.remove("hide");
+  currentlevel = quizArray_level4;
+  initial(currentlevel);
+});
+
+//when user click on Level 5 button
+level5Button.addEventListener("click", () => {
+  startScreen.classList.add("hide");
+  displayContainer.classList.remove("hide");
+  currentlevel = quizArray_level5;
+  initial(currentlevel);
+});
+
+//when user click on Level 6 button
+level6Button.addEventListener("click", () => {
+  startScreen.classList.add("hide");
+  displayContainer.classList.remove("hide");
+  currentlevel = quizArray_level6;
+  initial(currentlevel);
+});
+
+//when user click on Level 7 button
+level7Button.addEventListener("click", () => {
+  startScreen.classList.add("hide");
+  displayContainer.classList.remove("hide");
+  currentlevel = quizArray_level7;
   initial(currentlevel);
 });
 

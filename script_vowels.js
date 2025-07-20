@@ -7,9 +7,9 @@ let scoreContainer = document.querySelector(".score-container");
 let restart = document.getElementById("restart");
 let userScore = document.getElementById("user-score");
 let startScreen = document.querySelector(".start-screen");
-let startButton = document.getElementById("start-button");
-let level9Button = document.getElementById("level-nine");
-let level10Button = document.getElementById("level-ten");
+let level1Button = document.getElementById("level-1");
+let level1aButton = document.getElementById("level-1a");
+let level1bButton = document.getElementById("level-1b");
 let homeButton = document.getElementById("home");
 let questionCount;
 let scoreCount = 0;
@@ -23,9 +23,6 @@ window.onload = () => {
   startScreen.classList.remove("hide");
   displayContainer.classList.add("hide");
 };
-
-//randomly sort questions in large levels
-quizArray_level10.sort(() => Math.random() - 0.5);
 
 //Restart Quiz
 restart.addEventListener("click", () => {
@@ -167,26 +164,27 @@ function initial(chosen_level) {
   quizDisplay(questionCount);
 }
 
+
 //when user click on Level 1 button
-startButton.addEventListener("click", () => {
+level1Button.addEventListener("click", () => {
   startScreen.classList.add("hide");
   displayContainer.classList.remove("hide");
   currentlevel = quizArray_level1;
   initial(currentlevel);
 });
 
-//when user click on Level 8 button
-level9Button.addEventListener("click", () => {
+//when user click on Level 1a button
+level1aButton.addEventListener("click", () => {
   startScreen.classList.add("hide");
   displayContainer.classList.remove("hide");
-  currentlevel = quizArray_level9;
+  currentlevel = quizArray_level1a;
   initial(currentlevel);
 });
 
-//when user click on Level 8 button
-level10Button.addEventListener("click", () => {
+//when user click on Level 1b button
+level1bButton.addEventListener("click", () => {
   startScreen.classList.add("hide");
   displayContainer.classList.remove("hide");
-  currentlevel = quizArray_level10;
+  currentlevel = quizArray_level1b;
   initial(currentlevel);
 });

@@ -1,0 +1,79 @@
+<!-- Made By Jayzzie Gujarati -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati letters Quiz</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="starrybackground.css">
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="sub-container">
+        <div class="sky">
+          <div class="stars"></div>
+          <div class="stars2"></div>
+          <div class="stars3"></div>
+          <div class="comet"></div>
+        </div>
+      </div>
+    </div>
+    <div class="start-screen">
+      <h2>Vowels</h2>
+      <div class = "letters">
+      <audio id="vowel_a" src="./letter_pronounciations/a.mp3" preload="auto"></audio>
+      <button class ="letterbutton" id="vowel_a" onclick="document.getElementById('vowel_a').play();">અ</button>
+      <audio id="vowel_aa" src="./letter_pronounciations/aa.mp3" preload="auto"></audio>
+        <button class ="letterbutton" id="vowel_aa" onclick="document.getElementById('vowel_aa').play();">આ</button>
+      <audio id="vowel_e" src="./letter_pronounciations/e.mp3" preload="auto"></audio>
+        <button class ="letterbutton" id="vowel_e" onclick="document.getElementById('vowel_e').play();">એ</button>
+      <audio id="vowel_i" src="./letter_pronounciations/i.mp3" preload="auto"></audio>
+        <button class ="letterbutton" id="vowel_i" onclick="document.getElementById('vowel_i').play();">ઇ</button>
+      <audio id="vowel_ii" src="./letter_pronounciations/ee.mp3" preload="auto"></audio>
+        <button class ="letterbutton" id="vowel_ii" onclick="document.getElementById('vowel_ii').play();">ઈ</button>
+        <button class ="level" id="level-1a">Quiz 1</button>
+      <audio id="vowel_o" src="./letter_pronounciations/o.mp3" preload="auto"></audio>
+      <button class ="letterbutton" id="vowel_o" onclick="document.getElementById('vowel_o').play();">ઓ</button>
+      <audio id="vowel_ai" src="./letter_pronounciations/ai.mp3" preload="auto"></audio>
+        <button class ="letterbutton" id="vowel_ai" onclick="document.getElementById('vowel_ai').play();">ઐ</button>
+      <audio id="vowel_au" src="./letter_pronounciations/au.mp3" preload="auto"></audio>
+        <button class ="letterbutton" id="vowel_au" onclick="document.getElementById('vowel_au').play();">ઔ</button>
+      <audio id="vowel_u" src="./letter_pronounciations/u.mp3" preload="auto"></audio>
+        <button class ="letterbutton" id="vowel_u" onclick="document.getElementById('vowel_u').play();">ઉ</button>
+      <audio id="vowel_uu" src="./letter_pronounciations/oo.mp3" preload="auto"></audio>
+        <button class ="letterbutton" id="vowel_uu" onclick="document.getElementById('vowel_uu').play();">ઊ</button>
+        <button class ="level" id="level-1b">Quiz 2</button>
+      </div>
+      <button class ="level" id="level-1">All Vowels Quiz</button>
+    </div>
+    <div id="display-container">
+      <div class="header">
+        <div class="number-of-count">
+          <span class="number-of-question">1 of 10 questions</span>
+        </div>
+      </div>
+      <div id="container">
+        <!-- questions and options will be displayed here -->
+      </div>
+      <button id="next-button">Next</button>
+    </div>
+    <div class="score-container hide">
+      <div id="user-score">Demo Score</div>
+        <div class="options">
+        <button id="restart">Retry level</button>
+        <button class="go_back" id="vowel_page" onclick="location.href='./vowels_page.html'">Back to vowels</button>
+        </div>
+        <div>
+        <button id="home">Return home</button>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="questions_level1.js"></script>
+    <script src="questions_level1a.js"></script>
+    <script src="questions_level1b.js"></script>
+    <script src="script_vowels.js"></script>
+  </body>
+</html>
