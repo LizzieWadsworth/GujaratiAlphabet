@@ -33,19 +33,50 @@ button {
 #start-button,
 #restart, 
 #home,
+#next-button,
 .level {
-  background: #037705;
-  color: #fff;
-  padding: 5px 5px;
-  border-radius: 8px;
+  background: #fff;
+  color: #1CB0F6;
+  height: 44px;
+  padding: 10px 10px;
+  border-radius: 15px;
   border: none;
   font-size: 24px;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 800;
+  box-shadow: 0 4px 0 #BBE7FC;
 }
+
+.letterbutton {
+  background: #fff;
+  color: #1abf0b;
+  height: 44px;
+  padding: 10px 10px;
+  border-radius: 15px;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  font-weight: 800;
+  box-shadow: 0 4px 0 #c6fcbb;
+}
+
+#start-button:active,
+#restart:active, 
+#home:active,
+#next-button:active,
+.level:active, 
+.letterbutton:active {
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
 #restart, 
 #home {
   margin-top: 0.9em;
+}
+
+#next-button {
+  float: right;
 }
 
 #display-container {
@@ -98,17 +129,7 @@ button {
   color: #000000;
   cursor: not-allowed;
 }
-#next-button {
-  background-color: #0a69ed;
-  color: #ffffff;
-  float: right;
-  padding: 8px 32px;
-  border-radius: 8px;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  font-weight: bold;
-}
+
 .hide {
   display: none;
 }
@@ -142,8 +163,27 @@ button {
   margin-bottom: 20px;
 }
 
+.letters {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.letters2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
 .endscreen {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
 }
+audio {
+    color-scheme: dark;
+}
+
+

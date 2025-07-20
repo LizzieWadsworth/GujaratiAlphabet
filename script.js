@@ -8,13 +8,17 @@ let restart = document.getElementById("restart");
 let userScore = document.getElementById("user-score");
 let startScreen = document.querySelector(".start-screen");
 let startButton = document.getElementById("start-button");
+let level1Button = document.getElementById("level-1");
+let level1aButton = document.getElementById("level-1a");
+let level1bButton = document.getElementById("level-1b");
 let level2Button = document.getElementById("level-two");
 let level3Button = document.getElementById("level-three");
 let level4Button = document.getElementById("level-four");
 let level5Button = document.getElementById("level-five");
 let level6Button = document.getElementById("level-six");
 let level7Button = document.getElementById("level-seven");
-let level8Button = document.getElementById("level-eight");
+let level9Button = document.getElementById("level-nine");
+let level10Button = document.getElementById("level-ten");
 let homeButton = document.getElementById("home");
 let questionCount;
 let scoreCount = 0;
@@ -23,8 +27,14 @@ let beatcorrect = new Audio('duolingo-correct.mp3');
 let beatwrong = new Audio('duolingo-wrong.mp3');
 let currentlevel = quizArray_level1;
 
+//Return to start screen on load
+window.onload = () => {
+  startScreen.classList.remove("hide");
+  displayContainer.classList.add("hide");
+};
+
 //randomly sort questions in large levels
-quizArray_level8.sort(() => Math.random() - 0.5);
+quizArray_level10.sort(() => Math.random() - 0.5);
 
 //Restart Quiz
 restart.addEventListener("click", () => {
@@ -107,7 +117,7 @@ function quizCreator(chosen_quiz_array) {
     //question
     let question_DIV = document.createElement("p");
     question_DIV.classList.add("question");
-    question_DIV.innerHTML = i.question;
+    question_DIV.innerHTML = i.question+'<br><audio controls src="'+i.audio_url+'"></audio>';
     div.appendChild(question_DIV);
     //options
     div.innerHTML += `
@@ -155,6 +165,7 @@ function checker(userOption) {
   });
 }
 
+
 //initial setup
 function initial(chosen_level) {
   quizContainer.innerHTML = "";
@@ -170,6 +181,30 @@ startButton.addEventListener("click", () => {
   startScreen.classList.add("hide");
   displayContainer.classList.remove("hide");
   currentlevel = quizArray_level1;
+  initial(currentlevel);
+});
+
+//when user click on Level 1 button
+level1Button.addEventListener("click", () => {
+  startScreen.classList.add("hide");
+  displayContainer.classList.remove("hide");
+  currentlevel = quizArray_level1;
+  initial(currentlevel);
+});
+
+//when user click on Level 2 button
+level1aButton.addEventListener("click", () => {
+  startScreen.classList.add("hide");
+  displayContainer.classList.remove("hide");
+  currentlevel = quizArray_level1a;
+  initial(currentlevel);
+});
+
+//when user click on Level 2 button
+level1bButton.addEventListener("click", () => {
+  startScreen.classList.add("hide");
+  displayContainer.classList.remove("hide");
+  currentlevel = quizArray_level1b;
   initial(currentlevel);
 });
 
@@ -222,15 +257,17 @@ level7Button.addEventListener("click", () => {
 });
 
 //when user click on Level 8 button
-level8Button.addEventListener("click", () => {
+level9Button.addEventListener("click", () => {
   startScreen.classList.add("hide");
   displayContainer.classList.remove("hide");
-  currentlevel = quizArray_level8;
+  currentlevel = quizArray_level9;
   initial(currentlevel);
 });
 
-//hide quiz and display start screen
-window.onload = () => {
-  startScreen.classList.remove("hide");
-  displayContainer.classList.add("hide");
-};
+//when user click on Level 8 button
+level10Button.addEventListener("click", () => {
+  startScreen.classList.add("hide");
+  displayContainer.classList.remove("hide");
+  currentlevel = quizArray_level10;
+  initial(currentlevel);
+});
