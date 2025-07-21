@@ -10,13 +10,14 @@ body {
 }
 .start-screen,
 .score-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-direction: column;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  margin-right: 10vw;
+  margin-left: 10vw;  
+  text-align: center;
+  display: grid;
+  min-height: 80vh;
   align-items: center;
 }
 
@@ -158,39 +159,17 @@ button {
   text-align: center;
 }
 
-.options {
-  display: grid;
-  grid-auto-flow: column;
-  gap: 16px;
-  margin-bottom: 20px;
-}
-
-.levels {
-  display: grid;
-  grid-auto-flow: column;
-  gap: 16px;
-  margin-bottom: 20px;
-}
-
-.letters {
-  display: grid;
-  grid-auto-flow: column;
-  gap: 16px;
-  margin-bottom: 20px;
-}
-
-.letters2 {
-  display: grid;
-  grid-auto-flow: column;
-  gap: 16px;
-  margin-bottom: 20px;
-}
-
+.options, 
+.levels, 
+.letters, 
+.letters2, 
 .endscreen {
   display: grid;
-  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   gap: 16px;
+  margin-bottom: 20px;
 }
+
 audio {
     color-scheme: dark;
 }
