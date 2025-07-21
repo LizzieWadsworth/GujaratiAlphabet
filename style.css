@@ -48,11 +48,11 @@ button {
   box-shadow: 0 4px 0 #BBE7FC;
 }
 
-.letterbutton {
+.letterbutton, 
+.learnbutton {
   background: #fff;
   color: #1abf0b;
   height: 2.2em;
-  min-width: 2.2em;
   padding: 10px 10px;
   border-radius: 15px;
   border: none;
@@ -62,13 +62,18 @@ button {
   box-shadow: 0 4px 0 #c6fcbb;
 }
 
+.letterbutton {
+  aspect-ratio : 1 / 1;
+}
+
 #start-button:active,
 #restart:active, 
 #home:active,
 #next-button:active,
 .go_back:active,
 .level:active, 
-.letterbutton:active {
+.letterbutton:active, 
+.learnbutton:active {
   box-shadow: none;
   transform: translateY(4px);
 }
