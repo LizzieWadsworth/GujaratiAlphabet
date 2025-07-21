@@ -51,11 +51,11 @@ nextBtn.addEventListener(
       const result = Math.round((scoreCount / questionCount) * 100)
       if (result >= 40) {
         userScore.innerHTML =
-          "Congratulations! <br>You got " + result + "% correct<br> " + scoreCount + " out of " + questionCount + "<br>Keep it up!";
+          "<h2>" + result + "%</h2><br>Congratulations - Keep it up!";
       }
       else {
         userScore.innerHTML =
-          "Good attempt!<br>You got " + result + "% correct<br> " + scoreCount + " out of " + questionCount + "<br>Keep trying!";
+          "<h2>" + result + "%</h2><br>Good attempt - keep trying!";
       }
     } else {
       //display questionCount
