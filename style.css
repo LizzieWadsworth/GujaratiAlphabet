@@ -45,7 +45,7 @@ button {
 .level {
   background: #fff;
   color: #1CB0F6;
-  height: auto;
+  height: 100%;
   padding: 10px 10px;
   border-radius: 15px;
   border: none;
@@ -205,6 +205,17 @@ button {
 .options {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 40px;
+  text-align: center;
+  place-items: center;
+  max-width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.homegrids {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
   gap: 40px;
   text-align: center;
   place-items: center;
