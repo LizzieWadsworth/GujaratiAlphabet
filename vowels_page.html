@@ -20,41 +20,44 @@
         </div>
       </div>
     <div class="start-screen">
+      <div class="wrapper">
       <h2>Vowels</h2>
       <div class = "letters">
       <audio id="vowel_a" src="./letter_pronounciations/a.mp3" preload="auto"></audio>
-      <button class ="letterbutton" id="vowel_a" onclick="document.getElementById('vowel_a').play();">અ</button>
+      <button class ="letterbutton lvl1" id="vowel_a" onclick="document.getElementById('vowel_a').play();">અ</button>
       <audio id="vowel_aa" src="./letter_pronounciations/aa.mp3" preload="auto"></audio>
-        <button class ="letterbutton" id="vowel_aa" onclick="document.getElementById('vowel_aa').play();">આ</button>
+        <button class ="letterbutton lvl1" id="vowel_aa" onclick="document.getElementById('vowel_aa').play();">આ</button>
       <audio id="vowel_e" src="./letter_pronounciations/e.mp3" preload="auto"></audio>
-        <button class ="letterbutton" id="vowel_e" onclick="document.getElementById('vowel_e').play();">એ</button>
+        <button class ="letterbutton lvl1" id="vowel_e" onclick="document.getElementById('vowel_e').play();">એ</button>
       <audio id="vowel_i" src="./letter_pronounciations/i.mp3" preload="auto"></audio>
-        <button class ="letterbutton" id="vowel_i" onclick="document.getElementById('vowel_i').play();">ઇ</button>
+        <button class ="letterbutton lvl1" id="vowel_i" onclick="document.getElementById('vowel_i').play();">ઇ</button>
       <audio id="vowel_ii" src="./letter_pronounciations/ee.mp3" preload="auto"></audio>
-        <button class ="letterbutton" id="vowel_ii" onclick="document.getElementById('vowel_ii').play();">ઈ</button>
-        <button class ="level" id="level-1a">Quiz 1</button>
+        <button class ="letterbutton lvl1" id="vowel_ii" onclick="document.getElementById('vowel_ii').play();">ઈ</button>
+        <button class ="level lvl1" id="level-1a">Quiz 1</button>
       </div>
       <div class = "letters">
       <audio id="vowel_o" src="./letter_pronounciations/o.mp3" preload="auto"></audio>
-      <button class ="letterbutton" id="vowel_o" onclick="document.getElementById('vowel_o').play();">ઓ</button>
+      <button class ="letterbutton lvl5" id="vowel_o" onclick="document.getElementById('vowel_o').play();">ઓ</button>
       <audio id="vowel_ai" src="./letter_pronounciations/ai.mp3" preload="auto"></audio>
-        <button class ="letterbutton" id="vowel_ai" onclick="document.getElementById('vowel_ai').play();">ઐ</button>
+        <button class ="letterbutton lvl5" id="vowel_ai" onclick="document.getElementById('vowel_ai').play();">ઐ</button>
       <audio id="vowel_au" src="./letter_pronounciations/au.mp3" preload="auto"></audio>
-        <button class ="letterbutton" id="vowel_au" onclick="document.getElementById('vowel_au').play();">ઔ</button>
+        <button class ="letterbutton lvl5" id="vowel_au" onclick="document.getElementById('vowel_au').play();">ઔ</button>
       <audio id="vowel_u" src="./letter_pronounciations/u.mp3" preload="auto"></audio>
-        <button class ="letterbutton" id="vowel_u" onclick="document.getElementById('vowel_u').play();">ઉ</button>
+        <button class ="letterbutton lvl5" id="vowel_u" onclick="document.getElementById('vowel_u').play();">ઉ</button>
       <audio id="vowel_uu" src="./letter_pronounciations/oo.mp3" preload="auto"></audio>
-        <button class ="letterbutton" id="vowel_uu" onclick="document.getElementById('vowel_uu').play();">ઊ</button>
-        <button class ="level" id="level-1b">Quiz 2</button>
+        <button class ="letterbutton lvl5" id="vowel_uu" onclick="document.getElementById('vowel_uu').play();">ઊ</button>
+        <button class ="level lvl5" id="level-1b">Quiz 2</button>
       </div>
-        <div>
-          <button class ="level" id="level-1">All Vowels Quiz</button>
+        <div class="singlebutton">
+          <button class ="level lvl2" id="level-1">All Vowels Quiz</button>
         </div>
-        <div>
-          <button id="home">Return home</button>
+        <div class="singlebutton">
+          <button class="go_back lvl3" onclick="location.href='./index.html'">Return home</button>
+        </div>
         </div>
     </div>
     <div id="display-container" class="hide">
+      <div class="wrapper">
       <div class="header">
         <div class="number-of-count">
           <span class="number-of-question">1 of 10 questions</span>
@@ -65,7 +68,10 @@
       </div>
       <button id="next-button">Next</button>
     </div>
+    </div>
     <div class="score-container hide">
+      <div class="wrapper">
+      <h2>Score</h2>
       <div id="user-score">Demo Score</div>
         <div class="options">
         <button id="restart">Retry level</button>
@@ -73,6 +79,7 @@
         </div>
         <div>
         <button id="home">Return home</button>
+        </div>
         </div>
     </div>
     </div>

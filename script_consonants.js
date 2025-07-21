@@ -110,7 +110,7 @@ function quizCreator(chosen_quiz_array) {
     //question
     let question_DIV = document.createElement("p");
     question_DIV.classList.add("question");
-    question_DIV.innerHTML = i.question+'<br><audio controls src="'+i.audio_url+'"></audio>';
+    question_DIV.innerHTML = i.question+'<br><audio controls controlslist="nodownload noplaybackrate" src="'+i.audio_url+'"></audio>';
     div.appendChild(question_DIV);
     //options
     div.innerHTML += `

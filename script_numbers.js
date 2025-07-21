@@ -7,16 +7,14 @@ let scoreContainer = document.querySelector(".score-container");
 let restart = document.getElementById("restart");
 let userScore = document.getElementById("user-score");
 let startScreen = document.querySelector(".start-screen");
-let startButton = document.getElementById("start-button");
-let level9Button = document.getElementById("level-nine");
-let level10Button = document.getElementById("level-ten");
-let homeButton = document.getElementById("home");
+let level9Button = document.getElementById("level-9");
+let level9aButton = document.getElementById("level-9a");
+let level9bButton = document.getElementById("level-9b");
 let questionCount;
 let scoreCount = 0;
 let count = 11;
 let beatcorrect = new Audio('duolingo-correct.mp3');
 let beatwrong = new Audio('duolingo-wrong.mp3');
-let currentlevel = quizArray_level1;
 
 //Return to start screen on load
 window.onload = () => {
@@ -24,19 +22,11 @@ window.onload = () => {
   displayContainer.classList.add("hide");
 };
 
-//randomly sort questions in large levels
-quizArray_level10.sort(() => Math.random() - 0.5);
-
 //Restart Quiz
 restart.addEventListener("click", () => {
   initial(currentlevel);
   displayContainer.classList.remove("hide");
   scoreContainer.classList.add("hide");
-});
-
-//Return home
-homeButton.addEventListener("click", () => {
-  window.location.href="./index.html"
 });
 
 //Next Button
@@ -54,11 +44,11 @@ nextBtn.addEventListener(
       const result = Math.round((scoreCount / questionCount) * 100)
       if (result >= 40) {
         userScore.innerHTML =
-          "Congratulations! <br>You got " + result + "% correct<br> " + scoreCount + " out of " + questionCount + "<br>Keep it up!";
+          "<h2>" + result + "%</h2><br>Congratulations - Keep it up!";
       }
       else {
         userScore.innerHTML =
-          "Good attempt!<br>You got " + result + "% correct<br> " + scoreCount + " out of " + questionCount + "<br>Keep trying!";
+          "<h2>" + result + "%</h2><br>Good attempt - keep trying!";
       }
     } else {
       //display questionCount
@@ -167,14 +157,6 @@ function initial(chosen_level) {
   quizDisplay(questionCount);
 }
 
-//when user click on Level 1 button
-startButton.addEventListener("click", () => {
-  startScreen.classList.add("hide");
-  displayContainer.classList.remove("hide");
-  currentlevel = quizArray_level1;
-  initial(currentlevel);
-});
-
 //when user click on Level 8 button
 level9Button.addEventListener("click", () => {
   startScreen.classList.add("hide");
@@ -184,9 +166,17 @@ level9Button.addEventListener("click", () => {
 });
 
 //when user click on Level 8 button
-level10Button.addEventListener("click", () => {
+level9aButton.addEventListener("click", () => {
   startScreen.classList.add("hide");
   displayContainer.classList.remove("hide");
-  currentlevel = quizArray_level10;
+  currentlevel = quizArray_level9a;
+  initial(currentlevel);
+});
+
+//when user click on Level 8 button
+level9bButton.addEventListener("click", () => {
+  startScreen.classList.add("hide");
+  displayContainer.classList.remove("hide");
+  currentlevel = quizArray_level9b;
   initial(currentlevel);
 });

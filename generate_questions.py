@@ -82,6 +82,8 @@ create_questions(level7, "quizArray_level7", "questions_level7.js")
 #create_questions(level8, "quizArray_level8", "questions_level8.js")
 
 # numbers quiz
+create_questions(level9[:5], "quizArray_level9a", "questions_level9a.js")
+create_questions(level9[5:], "quizArray_level9b", "questions_level9b.js")
 create_questions(level9, "quizArray_level9", "questions_level9.js")
 
 # make groups for all consonants, all letters

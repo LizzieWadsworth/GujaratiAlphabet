@@ -1,0 +1,93 @@
+<!-- Made By Jayzzie Gujarati -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati letters Quiz</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="starrybackground.css">
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="sub-container">
+        <div class="sky">
+          <div class="stars"></div>
+          <div class="stars2"></div>
+          <div class="stars3"></div>
+          <div class="comet"></div>
+        </div>
+      </div>
+    <div class="start-screen">
+      <div class="wrapper">
+      <h2>Numbers</h2>
+      <div class = "letters">
+      <audio id="num1" src="./letter_pronounciations/ek.mp3" preload="auto"></audio>
+      <button class ="letterbutton lvl1" id="num1" onclick="document.getElementById('num1').play();">૧</button>
+      <audio id="num2" src="./letter_pronounciations/be.mp3" preload="auto"></audio>
+        <button class ="letterbutton lvl1" id="num2" onclick="document.getElementById('num2').play();">૨</button>
+      <audio id="num3" src="./letter_pronounciations/tran.mp3" preload="auto"></audio>
+        <button class ="letterbutton lvl1" id="num3" onclick="document.getElementById('num3').play();">૩</button>
+      <audio id="num4" src="./letter_pronounciations/chaar.mp3" preload="auto"></audio>
+        <button class ="letterbutton lvl1" id="num4" onclick="document.getElementById('num4').play();">૪</button>
+      <audio id="num5" src="./letter_pronounciations/paanch.mp3" preload="auto"></audio>
+        <button class ="letterbutton lvl1" id="num5" onclick="document.getElementById('num5').play();">૫</button>
+        <button class ="level lvl1" id="level-9a">Quiz 1</button>
+      </div>
+      <div class = "letters">
+      <audio id="num6" src="./letter_pronounciations/chha.mp3" preload="auto"></audio>
+      <button class ="letterbutton lvl5" id="num6" onclick="document.getElementById('num6').play();">૬</button>
+      <audio id="num7" src="./letter_pronounciations/saat.mp3" preload="auto"></audio>
+        <button class ="letterbutton lvl5" id="num7" onclick="document.getElementById('num7').play();">૭</button>
+      <audio id="num8" src="./letter_pronounciations/aanth.mp3" preload="auto"></audio>
+        <button class ="letterbutton lvl5" id="num8" onclick="document.getElementById('num8').play();">૮</button>
+      <audio id="num9" src="./letter_pronounciations/nav.mp3" preload="auto"></audio>
+        <button class ="letterbutton lvl5" id="num9" onclick="document.getElementById('num9').play();">૯</button>
+      <audio id="num10" src="./letter_pronounciations/das.mp3" preload="auto"></audio>
+        <button class ="letterbutton lvl5" id="num10" onclick="document.getElementById('num10').play();">૧૦</button>
+        <button class ="level lvl5" id="level-9b">Quiz 2</button>
+      </div>
+        <div class="singlebutton">
+          <button class ="level lvl2" id="level-9">All Numbers Quiz</button>
+        </div>
+        <div class="singlebutton">
+          <button class="go_back lvl3" onclick="location.href='./index.html'">Return home</button>
+        </div>
+        </div>
+    </div>
+    <div id="display-container" class="hide">
+        <div class="wrapper">
+      <div class="header">
+        <div class="number-of-count">
+          <span class="number-of-question">1 of 10 questions</span>
+        </div>
+      </div>
+      <div id="container">
+        <!-- questions and options will be displayed here -->
+      </div>
+      <button id="next-button">Next</button>
+    </div>
+    </div>
+    <div class="score-container hide">
+        <div class="wrapper">
+        <h2>Score</h2>
+        <div id="user-score">Demo Score</div>
+        <div class="options">
+        <button id="restart">Retry level</button>
+        <button class="go_back" id="numbers_page" onclick="location.href='./numbers_page.html'">Back to numbers</button>
+        </div>
+        <div>
+        <button class="go_back lvl3" onclick="location.href='./index.html'">Return home</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Script -->
+    <script src="questions_level9.js"></script>
+    <script src="questions_level9a.js"></script>
+    <script src="questions_level9b.js"></script>
+    <script src="script_numbers.js"></script>
+  </body>
+</html>
