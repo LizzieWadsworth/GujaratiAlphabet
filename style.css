@@ -204,8 +204,8 @@ button {
 
 .options {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 16px;
   text-align: center;
   place-items: center;
   max-width: 90vw;
