@@ -80,9 +80,9 @@
         <button class ="letterbutton" id="letter_va" onclick="document.getElementById('letter_va').play();">વ</button>
         <audio id="letter_sha" src="./letter_pronounciations/28.mp3" preload="auto"></audio>
         <button class ="letterbutton" id="letter_sha" onclick="document.getElementById('letter_sha').play();">શ</button>
-        <audio id="letter_Sha" src="./letter_pronounciations/29.mp3" preload="auto"></audio>
+        <audio id="letter_Sha" src="./letter_pronounciations/30.mp3" preload="auto"></audio>
         <button class ="letterbutton" id="letter_Sha" onclick="document.getElementById('letter_Sha').play();">ષ</button>
-        <audio id="letter_sa" src="./letter_pronounciations/30.mp3" preload="auto"></audio>
+        <audio id="letter_sa" src="./letter_pronounciations/29.mp3" preload="auto"></audio>
         <button class ="letterbutton" id="letter_sa" onclick="document.getElementById('letter_sa').play();">સ</button>
         <button class ="level" id="level-five">Level 4</button>
         </div>
@@ -114,11 +114,19 @@
         <button class ="letterbutton" id="letter_gna" onclick="document.getElementById('letter_gna').play();">જ્ઞ</button>
         <button class ="level" id="level-seven">Level 6</button>
         </div>
+        <div class="levels">
+            <button class ="level" id="level-twofour">Levels 1-3</button>
+            <button class ="level" id="level-5to7">Level 4-6</button>
+            <button class ="level" id="level-2to7">All consonants</button>
+        </div>
+        <div>
+        <button class="go_back" onclick="location.href='./index.html'">Return home</button>
+        </div>
     </div>
-    <div id="display-container">
+    <div id="display-container" class="hide">
       <div class="header">
         <div class="number-of-count">
-          <span class="number-of-question">1 of 10 questions</span>
+          <span class="number-of-question"></span>
         </div>
       </div>
       <div id="container">
@@ -133,19 +141,21 @@
         <button class="go_back" id="cons_page" onclick="location.href='./consonants_page.html'">Back to consonants</button>
         </div>
         <div>
-        <button id="home">Return home</button>
+        <button class="go_back" onclick="location.href='./index.html'">Return home</button>
         </div>
     </div>
 
     <!-- Script -->
     <script src="questions_level2.js"></script>
+    <script src="questions_level2to4.js"></script>
     <script src="questions_level3.js"></script>
     <script src="questions_level4.js"></script>
     <script src="questions_level5.js"></script>
+    <script src="questions_level5to7.js"></script>
     <script src="questions_level6.js"></script>
     <script src="questions_level7.js"></script>
     <script src="questions_level9.js"></script>
-    <script src="questions_level10.js"></script>
+    <script src="questions_level2to7.js"></script>
     <script src="script_consonants.js"></script>
   </body>
 </html>

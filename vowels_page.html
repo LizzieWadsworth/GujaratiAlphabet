@@ -34,6 +34,8 @@
       <audio id="vowel_ii" src="./letter_pronounciations/ee.mp3" preload="auto"></audio>
         <button class ="letterbutton" id="vowel_ii" onclick="document.getElementById('vowel_ii').play();">ઈ</button>
         <button class ="level" id="level-1a">Quiz 1</button>
+      </div>
+      <div class = "letters">
       <audio id="vowel_o" src="./letter_pronounciations/o.mp3" preload="auto"></audio>
       <button class ="letterbutton" id="vowel_o" onclick="document.getElementById('vowel_o').play();">ઓ</button>
       <audio id="vowel_ai" src="./letter_pronounciations/ai.mp3" preload="auto"></audio>
@@ -46,9 +48,14 @@
         <button class ="letterbutton" id="vowel_uu" onclick="document.getElementById('vowel_uu').play();">ઊ</button>
         <button class ="level" id="level-1b">Quiz 2</button>
       </div>
-      <button class ="level" id="level-1">All Vowels Quiz</button>
+        <div>
+          <button class ="level" id="level-1">All Vowels Quiz</button>
+        </div>
+        <div>
+          <button id="home">Return home</button>
+        </div>
     </div>
-    <div id="display-container">
+    <div id="display-container" class="hide">
       <div class="header">
         <div class="number-of-count">
           <span class="number-of-question">1 of 10 questions</span>

@@ -67,10 +67,12 @@ def create_questions(level_list, quizarrayname, newfilename):
             id += 1
     nf.write("];\n") # end the file
 
+# vowels quizzes
 create_questions(level1, "quizArray_level1", "questions_level1.js")
 create_questions(['અ','આ','ઇ','ઈ','એ'], "quizArray_level1a", "questions_level1a.js")
 create_questions(['ઉ','ઊ','ઐ','ઔ','ઓ'], "quizArray_level1b", "questions_level1b.js")
 
+# consonant quizzes
 create_questions(level2, "quizArray_level2", "questions_level2.js")
 create_questions(level3, "quizArray_level3", "questions_level3.js")
 create_questions(level4, "quizArray_level4", "questions_level4.js")
@@ -78,8 +80,15 @@ create_questions(level5, "quizArray_level5", "questions_level5.js")
 create_questions(level6, "quizArray_level6", "questions_level6.js")
 create_questions(level7, "quizArray_level7", "questions_level7.js")
 #create_questions(level8, "quizArray_level8", "questions_level8.js")
+
+# numbers quiz
 create_questions(level9, "quizArray_level9", "questions_level9.js")
+
+# make groups for all consonants, all letters
 create_questions(list(all_letters_dict.keys()), "quizArray_level10", "questions_level10.js")
+create_questions(level2+level3+level4, "quizArray_levels2to4", "questions_level2to4.js")
+create_questions(level5+level6+level7, "quizArray_levels5to7", "questions_level5to7.js")
+create_questions(level2+level3+level4+level5+level6+level7, "quizArray_levels2to7", "questions_level2to7.js")
 
 print("All levels are created")
 
