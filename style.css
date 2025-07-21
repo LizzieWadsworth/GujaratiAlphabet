@@ -38,7 +38,7 @@ button {
 .level {
   background: #fff;
   color: #1CB0F6;
-  height: 2.2em;
+  height: auto;
   padding: 10px 10px;
   border-radius: 15px;
   border: none;
@@ -52,7 +52,7 @@ button {
 .learnbutton {
   background: #fff;
   color: #1abf0b;
-  height: 2.2em;
+  height: auto;
   padding: 10px 10px;
   border-radius: 15px;
   border: none;
