@@ -95,16 +95,16 @@ create_questions(level9[5:], "quizArray_level9b", "questions_level9b.js")
 create_questions(level9, "quizArray_level9", "questions_level9.js")
 
 # make groups for all consonants, all letters
-create_questions(list(all_letters_dict.keys()), "quizArray_level10", "questions_level10.js")
+create_questions(level1+level2+level3+level4+level5+level6+level7+level8, "quizArray_level10", "questions_level10.js")
 create_questions(level2+level3+level4, "quizArray_levels2to4", "questions_level2to4.js")
 create_questions(level5+level6+level7, "quizArray_levels5to7", "questions_level5to7.js")
 create_questions(level2+level3+level4+level5+level6+level7, "quizArray_levels2to7", "questions_level2to7.js")
 
 # Combinations consonant+vowel
 # For ka, kaa, ki... 
-create_questions(level10, "quizArray_level10", "questions_level10.js")
-create_questions(['ક​','કા','કિ','કી','કે'], "quizArray_level10a", "questions_level10a.js")
-create_questions(['કુ','કૂ','કૈ','કૌ','કો'], "quizArray_level10b", "questions_level10b.js")
+create_questions(level10, "quizArray_level11", "questions_level11.js")
+create_questions(['ક​','કા','કિ','કી','કે'], "quizArray_level11a", "questions_level11a.js")
+create_questions(['કુ','કૂ','કૈ','કૌ','કો'], "quizArray_level11b", "questions_level11b.js")
 
 print("All levels are created")
 

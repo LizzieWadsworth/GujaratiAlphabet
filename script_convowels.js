@@ -169,7 +169,7 @@ function initial(chosen_level) {
 level10Button.addEventListener("click", () => {
   startScreen.classList.add("hide");
   displayContainer.classList.remove("hide");
-  currentlevel = quizArray_level10;
+  currentlevel = quizArray_level11;
   initial(currentlevel);
 });
 
@@ -177,7 +177,7 @@ level10Button.addEventListener("click", () => {
 level10aButton.addEventListener("click", () => {
   startScreen.classList.add("hide");
   displayContainer.classList.remove("hide");
-  currentlevel = quizArray_level10a;
+  currentlevel = quizArray_level11a;
   initial(currentlevel);
 });
 
@@ -185,6 +185,6 @@ level10aButton.addEventListener("click", () => {
 level10bButton.addEventListener("click", () => {
   startScreen.classList.add("hide");
   displayContainer.classList.remove("hide");
-  currentlevel = quizArray_level10b;
+  currentlevel = quizArray_level11b;
   initial(currentlevel);
 });
