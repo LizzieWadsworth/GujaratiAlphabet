@@ -13,6 +13,7 @@ level6 = []
 level7 = []
 level8 = []
 level9 = []
+level10 = []
 
 for line in lines[1:]:
   guj, hind, eng, lev, aud = line.strip().split(",")
@@ -36,6 +37,8 @@ for line in lines[1:]:
     level8.append(guj)
   elif lev == 9:
     level9.append(guj)
+  elif lev == 10:
+    level10.append(guj)
 
 print(level1)
 
@@ -52,7 +55,12 @@ def create_questions(level_list, quizarrayname, newfilename):
             my_choice = level_list[number] # the letter for the quiz
             correct_answer = all_letters_dict[my_choice][1]
             options = [correct_answer]
-            audio = all_letters_dict[my_choice][3]
+            if "." in all_letters_dict[my_choice][3]:
+              audiolocation = all_letters_dict[my_choice][3].split('.')
+              if audiolocation[0] == 'b':
+                audio = "./Barakhadi_files/{}.mp3".format(audiolocation[1])
+            else:
+              audio = "./letter_pronounciations/{}.mp3".format(all_letters_dict[my_choice][3])
             while len(options) < 4:
                 wrong_answer = random.choice(level_list)
                 if all_letters_dict[wrong_answer][1] not in options:
@@ -62,7 +70,7 @@ def create_questions(level_list, quizarrayname, newfilename):
             nf.write('    question: "{}",\n'.format(my_choice))
             nf.write('    options: {},\n'.format(options))
             nf.write('    correct: "{}",\n'.format(correct_answer))
-            nf.write('    audio_url: "./letter_pronounciations/{}.mp3",\n'.format(audio))
+            nf.write('    audio_url: "{}",\n'.format(audio))
             nf.write("  },\n")
             id += 1
     nf.write("];\n") # end the file
@@ -91,6 +99,12 @@ create_questions(list(all_letters_dict.keys()), "quizArray_level10", "questions_
 create_questions(level2+level3+level4, "quizArray_levels2to4", "questions_level2to4.js")
 create_questions(level5+level6+level7, "quizArray_levels5to7", "questions_level5to7.js")
 create_questions(level2+level3+level4+level5+level6+level7, "quizArray_levels2to7", "questions_level2to7.js")
+
+# Combinations consonant+vowel
+# For ka, kaa, ki... 
+create_questions(level10, "quizArray_level10", "questions_level10.js")
+create_questions(['ક​','કા','કિ','કી','કે'], "quizArray_level10a", "questions_level10a.js")
+create_questions(['કુ','કૂ','કૈ','કૌ','કો'], "quizArray_level10b", "questions_level10b.js")
 
 print("All levels are created")
 

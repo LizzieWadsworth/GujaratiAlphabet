@@ -1,0 +1,93 @@
+<!-- Made By Jayzzie Gujarati -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati letters Quiz</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="starrybackground.css">
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="sub-container">
+        <div class="sky">
+          <div class="stars"></div>
+          <div class="stars2"></div>
+          <div class="stars3"></div>
+          <div class="comet"></div>
+        </div>
+      </div>
+    <div class="start-screen">
+      <div class="wrapper">
+      <h2>Combinations: Consonant + vowels</h2>
+      <div class = "letters">
+      <audio id="vowel_a" src="./Barakhadi_files/ka.mp3" preload="auto"></audio>
+      <button class ="letterbutton lvl1" id="vowel_a" onclick="document.getElementById('vowel_a').play();">ક</button>
+      <audio id="vowel_aa" src="./Barakhadi_files/kaa.mp3" preload="auto"></audio>
+        <button class ="letterbutton lvl1" id="vowel_aa" onclick="document.getElementById('vowel_aa').play();">કા</button>
+      <audio id="vowel_e" src="./Barakhadi_files/ke.mp3" preload="auto"></audio>
+        <button class ="letterbutton lvl1" id="vowel_e" onclick="document.getElementById('vowel_e').play();">કે</button>
+      <audio id="vowel_i" src="./Barakhadi_files/ki.mp3" preload="auto"></audio>
+        <button class ="letterbutton lvl1" id="vowel_i" onclick="document.getElementById('vowel_i').play();">કિ</button>
+      <audio id="vowel_ii" src="./Barakhadi_files/kii.mp3" preload="auto"></audio>
+        <button class ="letterbutton lvl1" id="vowel_ii" onclick="document.getElementById('vowel_ii').play();">કી</button>
+        <button class ="level lvl1" id="level-10a">Quiz 1</button>
+      </div>
+      <div class = "letters">
+      <audio id="vowel_o" src="./Barakhadi_files/ko.mp3" preload="auto"></audio>
+      <button class ="letterbutton lvl5" id="vowel_o" onclick="document.getElementById('vowel_o').play();">કો</button>
+      <audio id="vowel_ai" src="./Barakhadi_files/kai.mp3" preload="auto"></audio>
+        <button class ="letterbutton lvl5" id="vowel_ai" onclick="document.getElementById('vowel_ai').play();">કૈ</button>
+      <audio id="vowel_au" src="./Barakhadi_files/kau.mp3" preload="auto"></audio>
+        <button class ="letterbutton lvl5" id="vowel_au" onclick="document.getElementById('vowel_au').play();">કૌ</button>
+      <audio id="vowel_u" src="./Barakhadi_files/ku.mp3" preload="auto"></audio>
+        <button class ="letterbutton lvl5" id="vowel_u" onclick="document.getElementById('vowel_u').play();">કુ</button>
+      <audio id="vowel_uu" src="./Barakhadi_files/kuu.mp3" preload="auto"></audio>
+        <button class ="letterbutton lvl5" id="vowel_uu" onclick="document.getElementById('vowel_uu').play();">કૂ</button>
+        <button class ="level lvl5" id="level-10b">Quiz 2</button>
+      </div>
+        <div class="singlebutton">
+          <button class ="level lvl2" id="level-10">All Ka+Vowels Quiz</button>
+        </div>
+        <div class="singlebutton">
+          <button class="go_back lvl3" onclick="location.href='./index.html'">Return home</button>
+        </div>
+        </div>
+    </div>
+    <div id="display-container" class="hide">
+      <div class="wrapper">
+      <div class="header">
+        <div class="number-of-count">
+          <span class="number-of-question">1 of 10 questions</span>
+        </div>
+      </div>
+      <div id="container">
+        <!-- questions and options will be displayed here -->
+      </div>
+      <button id="next-button">Next</button>
+    </div>
+    </div>
+    <div class="score-container hide">
+      <div class="wrapper">
+      <h2>Score</h2>
+      <div id="user-score">Demo Score</div>
+        <div class="options">
+        <button id="restart">Retry level</button>
+        <button class="go_back" id="convowel_page" onclick="location.href='./convowels.html'">Back to consonant vowel combinations page</button>
+        </div>
+        <div>
+        <button id="home">Return home</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Script -->
+    <script src="questions_level10.js"></script>
+    <script src="questions_level10a.js"></script>
+    <script src="questions_level10b.js"></script>
+    <script src="script_convowels.js"></script>
+  </body>
+</html>
