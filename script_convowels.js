@@ -7,16 +7,15 @@ let scoreContainer = document.querySelector(".score-container");
 let restart = document.getElementById("restart");
 let userScore = document.getElementById("user-score");
 let startScreen = document.querySelector(".start-screen");
-let level10Button = document.getElementById("level-10");
-let level10aButton = document.getElementById("level-10a");
-let level10bButton = document.getElementById("level-10b");
-let homeButton = document.getElementById("home");
+let level11Button = document.getElementById("level-11");
+let level11aButton = document.getElementById("level-11a");
+let level11bButton = document.getElementById("level-11b");
 let questionCount;
 let scoreCount = 0;
 let count = 11;
 let beatcorrect = new Audio('duolingo-correct.mp3');
 let beatwrong = new Audio('duolingo-wrong.mp3');
-let currentlevel = quizArray_level10;
+let currentlevel = quizArray_level11;
 
 //Return to start screen on load
 window.onload = () => {
@@ -29,11 +28,6 @@ restart.addEventListener("click", () => {
   initial(currentlevel);
   displayContainer.classList.remove("hide");
   scoreContainer.classList.add("hide");
-});
-
-//Return home
-homeButton.addEventListener("click", () => {
-  window.location.href="./index.html"
 });
 
 //Next Button
@@ -166,7 +160,7 @@ function initial(chosen_level) {
 
 
 //when user click on Level 1 button
-level10Button.addEventListener("click", () => {
+level11Button.addEventListener("click", () => {
   startScreen.classList.add("hide");
   displayContainer.classList.remove("hide");
   currentlevel = quizArray_level11;
@@ -174,7 +168,7 @@ level10Button.addEventListener("click", () => {
 });
 
 //when user click on Level 1a button
-level10aButton.addEventListener("click", () => {
+level11aButton.addEventListener("click", () => {
   startScreen.classList.add("hide");
   displayContainer.classList.remove("hide");
   currentlevel = quizArray_level11a;
@@ -182,7 +176,7 @@ level10aButton.addEventListener("click", () => {
 });
 
 //when user click on Level 1b button
-level10bButton.addEventListener("click", () => {
+level11bButton.addEventListener("click", () => {
   startScreen.classList.add("hide");
   displayContainer.classList.remove("hide");
   currentlevel = quizArray_level11b;
